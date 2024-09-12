@@ -1,0 +1,50 @@
+@media (max-width: 799px) {
+    header {
+      background-color: lightblue;
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      font-size: smaller;
+
+    }
+    .Desktop{
+        display: none;
+    }
+    p {
+        padding: 10px;
+    }
+    .menu{
+        width: 10%;
+        height: 10%;
+    }
+  }
+
+  @media (min-width: 800px) {
+    .nav-bar {
+        background-color: rgb(201, 129, 70);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    p {
+        padding: 10px;
+    }
+    .Mobile {
+        display: none;
+        
+    }
+    .flex-container {
+        justify-content:space-between;
+      }
+      .logo-img {
+        border-radius: 100%;
+      }
+  }
+
+
+  body {
+    background-image: url(https://64.media.tumblr.com/a9b5997f24b6978d61d8a9013a4f8c9e/7b5b82a71634b23b-ab/s1280x1920/4a8ef6c172e1c13ee2b7fabc53ecdaa73f710f56.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif
+  }
