@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#hoverText {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+#inputField {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+}
