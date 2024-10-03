@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizar Cadastro</title>
+    <link rel="stylesheet" href="css/style-update.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Atualizar Cadastro</h2>
+        <form id="updateForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required value="usuario@exemplo.com">
+            
+            <label for="password">Nova Senha:</label>
+            <input type="password" id="password" name="password">
+
+            <label for="confirmPassword">Confirmar Nova Senha:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword">
+
+            <div class="button-group">
+                <button type="submit" class="btn-update">Atualizar</button>
+                <button type="button" class="btn-delete" id="deleteButton">Deletar Conta</button>
+            </div>
+        </form>
+        <p>Deseja sair? <a href="index.html">Fazer login</a></p>
+        <div id="message"></div>
+    </div>
+
+    <script src="js/update.js"></script>
+</body>
+</html>
