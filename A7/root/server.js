@@ -1,12 +1,16 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mysql = require("mysql2");
-const app = express();
 const cors = require("cors");
-app.use(bodyParser.json());
+const jwt = require('jsonwebtoken');
 const bcrypt = require("bcrypt");
 
+const app = express();
+const SECRET_KEY = 'seu_segredo_aqui';
+
 app.use(cors());
+app.use(bodyParser.json());
+
 
 // Conexão com o banco de dados
 const db = mysql.createConnection({
@@ -14,8 +18,10 @@ const db = mysql.createConnection({
   user: "root",
   password: "",
   database: "users",
-  port: "3306",
+  port: "3307",
 });
+
+
 
 app.post("/login", async (req, res) => {
   const { email, password } = req.body;
